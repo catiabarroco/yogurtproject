@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt 🥛</title>
+    <style>
+
+      @font-face {
+        font-family: myFirstFont;
+        src: url(cerebri-sans-cufonfonts/Cerebri\ Sans\ Book.ttf);
+      }
+        body{
+          background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%) fixed;
+        }
+        .container{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 60px;
+            background: white;
+            border-radius: 40px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            
+        }
+      h1 {
+        text-align: center;
+        color: #7d51e8;
+        font-family: myFirstFont;
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 10px;
+        font-family: myFirstFont;
+        padding: 15px;
+        font-size: 30px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 15px;
+        
+      }
+
+      p {
+        line-height: 2;
+        font-size: 16px;
+        margin: 20px 0 10px;
+        text-align: justify;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7d51e8;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out ;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .img-shecodes{
+        width: 200px;
+        
+     
+      }
+
+      .learMore {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #7d51e8;
+        font-size: 16px;
+        
+      }
+
+      .learMore:hover {
+        text-decoration: underline;
+        font-weight: 600;
+      }
+
+      footer{
+          text-align: center;
+          
+      }
+      .nameBuilt{
+          color: black;
+          text-decoration: none;
+      }
+
+      .nameBuilt:hover{
+          text-decoration: underline;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><img src="https://www.shecodes.io/assets/branding/logo-shecodes-f9fa0540d113c086f61eb6e89466c0cbd24a42163b6a96d4b01da078803f53ee.png" alt="shecodes" class="img-shecodes"></h1>
+        <h1>I love Yogurt</h1>
+        <h2>Especially Greek Yogurt</h2>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/024/646/original/greek-yogurt-jar-1.jpg.jpg?1641822361"
+          alt="Greek Yogurt"
+        />
+        <p>
+          Strained yogurt, Greek yogurt,[2] yogurt cheese, sack yogurt, or kerned
+          yogurt is yogurt that has been strained to remove most of its whey,
+          resulting in a thicker consistency than normal unstrained yogurt, while
+          still preserving the distinctive sour taste of yogurt.
+        </p>
+        <a
+          href="https://en.wikipedia.org/wiki/Strained_yogurt"
+          target="_black"
+          class="learMore"
+          >Learn More on Wikipedia</a
+        >
+        <button class="buy-button">👉 Buy Greek Yogurt</button>
+          </body>
+          <footer>
+        This page was built by
+        <a href="https://github.com/catiabarroco" target="_black" class="nameBuilt">Cátia Barroco</a>
+          </footer>
+    </div>
+    <script>
+        function buy(){
+            let name =prompt("What is your name?");
+            let email = prompt("What is your email adress?");
+
+            if (name.length > 0) {
+                alert(`Thank you ${name} !We'll be in touch by email, meanwhile have lot of Yogurts! 😁`)
+            }else{
+                alert(`Need to enter your data`)
+            }
+
+            
+            
+        }
+        let buyButton = document.querySelector('.buy-button');
+        buyButton.addEventListener("click", buy);
+    </script>
+</html>
